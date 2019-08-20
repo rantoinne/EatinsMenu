@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1F8108230BD69D0006426E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8107230BD69D0006426E /* AppDelegate.swift */; };
+		BE1F810A230BD69D0006426E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8109230BD69D0006426E /* HomeVC.swift */; };
+		BE1F810D230BD69D0006426E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1F810B230BD69D0006426E /* Main.storyboard */; };
+		BE1F8110230BD69D0006426E /* FruitTables.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE1F810E230BD69D0006426E /* FruitTables.xcdatamodeld */; };
+		BE1F8112230BD69E0006426E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1F8111230BD69E0006426E /* Assets.xcassets */; };
+		BE1F8115230BD69E0006426E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1F8113230BD69E0006426E /* LaunchScreen.storyboard */; };
+		BE1F8120230BD69E0006426E /* FruitTablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F811F230BD69E0006426E /* FruitTablesTests.swift */; };
+		BE1F812B230BD69E0006426E /* FruitTablesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F812A230BD69E0006426E /* FruitTablesUITests.swift */; };
+		BE1F813C230BD7060006426E /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F813B230BD7060006426E /* FoodCategory.swift */; };
+		BE1F813E230BD7600006426E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F813D230BD7600006426E /* Recipe.swift */; };
+		BE1F8140230BD7B40006426E /* DateSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F813F230BD7B40006426E /* DateSet.swift */; };
+		BE1F8183230C15010006426E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8182230C15010006426E /* CategoryCell.swift */; };
+		BE1F8185230C21E60006426E /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8184230C21E60006426E /* RecipesSelectionVC.swift */; };
+		BE1F8187230C2C1A0006426E /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8186230C2C1A0006426E /* RecipeCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE1F811C230BD69E0006426E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE1F80FC230BD69D0006426E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1F8103230BD69D0006426E;
+			remoteInfo = FruitTables;
+		};
+		BE1F8127230BD69E0006426E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE1F80FC230BD69D0006426E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1F8103230BD69D0006426E;
+			remoteInfo = FruitTables;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE1F8104230BD69D0006426E /* FruitTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1F8107230BD69D0006426E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE1F8109230BD69D0006426E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BE1F810C230BD69D0006426E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE1F810F230BD69D0006426E /* FruitTables.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitTables.xcdatamodel; sourceTree = "<group>"; };
+		BE1F8111230BD69E0006426E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE1F8114230BD69E0006426E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE1F8116230BD69E0006426E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1F811B230BD69E0006426E /* FruitTablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitTablesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1F811F230BD69E0006426E /* FruitTablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTablesTests.swift; sourceTree = "<group>"; };
+		BE1F8121230BD69E0006426E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1F8126230BD69E0006426E /* FruitTablesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitTablesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1F812A230BD69E0006426E /* FruitTablesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTablesUITests.swift; sourceTree = "<group>"; };
+		BE1F812C230BD69E0006426E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1F813B230BD7060006426E /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		BE1F813D230BD7600006426E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BE1F813F230BD7B40006426E /* DateSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSet.swift; sourceTree = "<group>"; };
+		BE1F8182230C15010006426E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		BE1F8184230C21E60006426E /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
+		BE1F8186230C2C1A0006426E /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE1F8101230BD69D0006426E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F8118230BD69E0006426E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F8123230BD69E0006426E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE1F80FB230BD69D0006426E = {
+			isa = PBXGroup;
+			children = (
+				BE1F8106230BD69D0006426E /* FruitTables */,
+				BE1F811E230BD69E0006426E /* FruitTablesTests */,
+				BE1F8129230BD69E0006426E /* FruitTablesUITests */,
+				BE1F8105230BD69D0006426E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE1F8105230BD69D0006426E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F8104230BD69D0006426E /* FruitTables.app */,
+				BE1F811B230BD69E0006426E /* FruitTablesTests.xctest */,
+				BE1F8126230BD69E0006426E /* FruitTablesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE1F8106230BD69D0006426E /* FruitTables */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F8138230BD6C80006426E /* Model */,
+				BE1F8139230BD6CE0006426E /* View */,
+				BE1F813A230BD6D30006426E /* Controller */,
+				BE1F8107230BD69D0006426E /* AppDelegate.swift */,
+				BE1F810B230BD69D0006426E /* Main.storyboard */,
+				BE1F8111230BD69E0006426E /* Assets.xcassets */,
+				BE1F8113230BD69E0006426E /* LaunchScreen.storyboard */,
+				BE1F8116230BD69E0006426E /* Info.plist */,
+				BE1F810E230BD69D0006426E /* FruitTables.xcdatamodeld */,
+			);
+			path = FruitTables;
+			sourceTree = "<group>";
+		};
+		BE1F811E230BD69E0006426E /* FruitTablesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F811F230BD69E0006426E /* FruitTablesTests.swift */,
+				BE1F8121230BD69E0006426E /* Info.plist */,
+			);
+			path = FruitTablesTests;
+			sourceTree = "<group>";
+		};
+		BE1F8129230BD69E0006426E /* FruitTablesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F812A230BD69E0006426E /* FruitTablesUITests.swift */,
+				BE1F812C230BD69E0006426E /* Info.plist */,
+			);
+			path = FruitTablesUITests;
+			sourceTree = "<group>";
+		};
+		BE1F8138230BD6C80006426E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F813B230BD7060006426E /* FoodCategory.swift */,
+				BE1F813D230BD7600006426E /* Recipe.swift */,
+				BE1F813F230BD7B40006426E /* DateSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE1F8139230BD6CE0006426E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F8182230C15010006426E /* CategoryCell.swift */,
+				BE1F8186230C2C1A0006426E /* RecipeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE1F813A230BD6D30006426E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE1F8109230BD69D0006426E /* HomeVC.swift */,
+				BE1F8184230C21E60006426E /* RecipesSelectionVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE1F8103230BD69D0006426E /* FruitTables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1F812F230BD69E0006426E /* Build configuration list for PBXNativeTarget "FruitTables" */;
+			buildPhases = (
+				BE1F8100230BD69D0006426E /* Sources */,
+				BE1F8101230BD69D0006426E /* Frameworks */,
+				BE1F8102230BD69D0006426E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitTables;
+			productName = FruitTables;
+			productReference = BE1F8104230BD69D0006426E /* FruitTables.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE1F811A230BD69E0006426E /* FruitTablesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1F8132230BD69E0006426E /* Build configuration list for PBXNativeTarget "FruitTablesTests" */;
+			buildPhases = (
+				BE1F8117230BD69E0006426E /* Sources */,
+				BE1F8118230BD69E0006426E /* Frameworks */,
+				BE1F8119230BD69E0006426E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1F811D230BD69E0006426E /* PBXTargetDependency */,
+			);
+			name = FruitTablesTests;
+			productName = FruitTablesTests;
+			productReference = BE1F811B230BD69E0006426E /* FruitTablesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE1F8125230BD69E0006426E /* FruitTablesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1F8135230BD69E0006426E /* Build configuration list for PBXNativeTarget "FruitTablesUITests" */;
+			buildPhases = (
+				BE1F8122230BD69E0006426E /* Sources */,
+				BE1F8123230BD69E0006426E /* Frameworks */,
+				BE1F8124230BD69E0006426E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1F8128230BD69E0006426E /* PBXTargetDependency */,
+			);
+			name = FruitTablesUITests;
+			productName = FruitTablesUITests;
+			productReference = BE1F8126230BD69E0006426E /* FruitTablesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE1F80FC230BD69D0006426E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Ravi;
+				TargetAttributes = {
+					BE1F8103230BD69D0006426E = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					BE1F811A230BD69E0006426E = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BE1F8103230BD69D0006426E;
+					};
+					BE1F8125230BD69E0006426E = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BE1F8103230BD69D0006426E;
+					};
+				};
+			};
+			buildConfigurationList = BE1F80FF230BD69D0006426E /* Build configuration list for PBXProject "FruitTables" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE1F80FB230BD69D0006426E;
+			productRefGroup = BE1F8105230BD69D0006426E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE1F8103230BD69D0006426E /* FruitTables */,
+				BE1F811A230BD69E0006426E /* FruitTablesTests */,
+				BE1F8125230BD69E0006426E /* FruitTablesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE1F8102230BD69D0006426E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1F8115230BD69E0006426E /* LaunchScreen.storyboard in Resources */,
+				BE1F8112230BD69E0006426E /* Assets.xcassets in Resources */,
+				BE1F810D230BD69D0006426E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F8119230BD69E0006426E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F8124230BD69E0006426E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE1F8100230BD69D0006426E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1F810A230BD69D0006426E /* HomeVC.swift in Sources */,
+				BE1F8110230BD69D0006426E /* FruitTables.xcdatamodeld in Sources */,
+				BE1F8140230BD7B40006426E /* DateSet.swift in Sources */,
+				BE1F8187230C2C1A0006426E /* RecipeCell.swift in Sources */,
+				BE1F8183230C15010006426E /* CategoryCell.swift in Sources */,
+				BE1F8108230BD69D0006426E /* AppDelegate.swift in Sources */,
+				BE1F8185230C21E60006426E /* RecipesSelectionVC.swift in Sources */,
+				BE1F813C230BD7060006426E /* FoodCategory.swift in Sources */,
+				BE1F813E230BD7600006426E /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F8117230BD69E0006426E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1F8120230BD69E0006426E /* FruitTablesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F8122230BD69E0006426E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1F812B230BD69E0006426E /* FruitTablesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE1F811D230BD69E0006426E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1F8103230BD69D0006426E /* FruitTables */;
+			targetProxy = BE1F811C230BD69E0006426E /* PBXContainerItemProxy */;
+		};
+		BE1F8128230BD69E0006426E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1F8103230BD69D0006426E /* FruitTables */;
+			targetProxy = BE1F8127230BD69E0006426E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE1F810B230BD69D0006426E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE1F810C230BD69D0006426E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE1F8113230BD69E0006426E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE1F8114230BD69E0006426E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE1F812D230BD69E0006426E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE1F812E230BD69E0006426E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE1F8130230BD69E0006426E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5N3L76DF2;
+				INFOPLIST_FILE = FruitTables/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitTables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE1F8131230BD69E0006426E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5N3L76DF2;
+				INFOPLIST_FILE = FruitTables/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitTables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE1F8133230BD69E0006426E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5N3L76DF2;
+				INFOPLIST_FILE = FruitTablesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitTablesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitTables.app/FruitTables";
+			};
+			name = Debug;
+		};
+		BE1F8134230BD69E0006426E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5N3L76DF2;
+				INFOPLIST_FILE = FruitTablesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitTablesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitTables.app/FruitTables";
+			};
+			name = Release;
+		};
+		BE1F8136230BD69E0006426E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5N3L76DF2;
+				INFOPLIST_FILE = FruitTablesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitTablesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FruitTables;
+			};
+			name = Debug;
+		};
+		BE1F8137230BD69E0006426E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5N3L76DF2;
+				INFOPLIST_FILE = FruitTablesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitTablesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FruitTables;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE1F80FF230BD69D0006426E /* Build configuration list for PBXProject "FruitTables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1F812D230BD69E0006426E /* Debug */,
+				BE1F812E230BD69E0006426E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1F812F230BD69E0006426E /* Build configuration list for PBXNativeTarget "FruitTables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1F8130230BD69E0006426E /* Debug */,
+				BE1F8131230BD69E0006426E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1F8132230BD69E0006426E /* Build configuration list for PBXNativeTarget "FruitTablesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1F8133230BD69E0006426E /* Debug */,
+				BE1F8134230BD69E0006426E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1F8135230BD69E0006426E /* Build configuration list for PBXNativeTarget "FruitTablesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1F8136230BD69E0006426E /* Debug */,
+				BE1F8137230BD69E0006426E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE1F810E230BD69D0006426E /* FruitTables.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE1F810F230BD69D0006426E /* FruitTables.xcdatamodel */,
+			);
+			currentVersion = BE1F810F230BD69D0006426E /* FruitTables.xcdatamodel */;
+			path = FruitTables.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE1F80FC230BD69D0006426E /* Project object */;
+}
