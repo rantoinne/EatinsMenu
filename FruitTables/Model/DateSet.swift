@@ -18,7 +18,7 @@ class DataSet {
     ]
     
     let Burgers = [
-        Recipe(title: "Recipe1", instructions: "Add1 add2 add3", imageName: "burger1"),
+        Recipe(title: "Recipe1", instructions: "Add1 add2 add3 Add1 add2 add3 Add1 add2 add3 Add1 add2 add3 Add1 add2 add3 ", imageName: "burger1"),
         Recipe(title: "Recipe1", instructions: "Add1 add2 add3", imageName: "burger2"),
         Recipe(title: "Recipe1", instructions: "Add1 add2 add3", imageName: "burger3"),
         Recipe(title: "Recipe1", instructions: "Add1 add2 add3", imageName: "burger4"),

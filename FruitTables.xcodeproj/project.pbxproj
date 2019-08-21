@@ -21,6 +21,7 @@
 		BE1F8183230C15010006426E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8182230C15010006426E /* CategoryCell.swift */; };
 		BE1F8185230C21E60006426E /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8184230C21E60006426E /* RecipesSelectionVC.swift */; };
 		BE1F8187230C2C1A0006426E /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8186230C2C1A0006426E /* RecipeCell.swift */; };
+		BE1F8189230C367B0006426E /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F8188230C367B0006426E /* RecipeDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BE1F8182230C15010006426E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		BE1F8184230C21E60006426E /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
 		BE1F8186230C2C1A0006426E /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		BE1F8188230C367B0006426E /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				BE1F8109230BD69D0006426E /* HomeVC.swift */,
 				BE1F8184230C21E60006426E /* RecipesSelectionVC.swift */,
+				BE1F8188230C367B0006426E /* RecipeDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				BE1F810A230BD69D0006426E /* HomeVC.swift in Sources */,
 				BE1F8110230BD69D0006426E /* FruitTables.xcdatamodeld in Sources */,
 				BE1F8140230BD7B40006426E /* DateSet.swift in Sources */,
+				BE1F8189230C367B0006426E /* RecipeDetailVC.swift in Sources */,
 				BE1F8187230C2C1A0006426E /* RecipeCell.swift in Sources */,
 				BE1F8183230C15010006426E /* CategoryCell.swift in Sources */,
 				BE1F8108230BD69D0006426E /* AppDelegate.swift in Sources */,
